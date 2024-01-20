@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Share Simple</title>
+</head>
+<body>
+    <h1>Web Share Simple</h1>
+    <ul id="files"></ul>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+
+    <script src="//{{ request.host }}:8080/socket.io/socket.io.js"></script>
+    <script>
+        // Kode JavaScript untuk menampilkan list file dan menangani download
+    </script>
+</body>
+</html>
