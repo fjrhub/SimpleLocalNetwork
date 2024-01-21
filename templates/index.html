@@ -3,47 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/index.css">
     <title>Web Share Simple</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #3498db;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin: 5px;
-            padding: 10px;
-            background-color: #f2f2f2;
-            border-radius: 5px;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        input[type="file"] {
-            margin-right: 10px;
-        }
-
-        button {
-            padding: 10px;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
     <h1>Web Share Simple</h1>
@@ -55,7 +16,7 @@
 
     <ul id="files">
         {% for file in files %}
-            <li><a href="{{ url_for('uploaded_file', filename=file) }}" target="_blank">{{ file }}</a></li>
+            <li><a href="{{ url_for('uploaded_file', filename=file) }}" id="data" target="_blank">{{ file }}</a></li>
         {% endfor %}
     </ul>
 
